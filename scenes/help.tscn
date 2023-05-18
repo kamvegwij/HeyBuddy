@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=5 format=3]
 
-[ext_resource path="res://additional scripts/help.gd" type="Script" id=1]
-[ext_resource path="res://my themes/button_theme.tres" type="Theme" id=3]
-[ext_resource path="res://assets/fonts/DiloWorld-mLJLv.ttf" type="FontFile" id=4]
+[ext_resource type="Script" path="res://scripts/help.gd" id="1"]
+[ext_resource type="Theme" uid="uid://dg8yuimsg0fib" path="res://my themes/button_theme.tres" id="3"]
+[ext_resource type="FontFile" uid="uid://c1jo8yynjvg36" path="res://assets/fonts/DiloWorld-mLJLv.ttf" id="4"]
 
 [sub_resource type="FontFile" id=1]
 size = 25

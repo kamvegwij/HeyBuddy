@@ -1,12 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://btra23ij6pnpl"]
+[gd_scene load_steps=5 format=3 uid="uid://cca8yx6p1s6c3"]
 
 [ext_resource type="AudioStream" uid="uid://dtrf77fkymwjt" path="res://assets/Audio/confirmation_001.ogg" id="1"]
-[ext_resource type="Script" path="res://additional scripts/MusicController.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/MusicController.gd" id="1_eaeco"]
 [ext_resource type="AudioStream" uid="uid://64l3m56we45j" path="res://assets/Audio/menu background.wav" id="3"]
 [ext_resource type="AudioStream" uid="uid://lducujixtw72" path="res://assets/Audio/select_001.ogg" id="4"]
 
 [node name="MusicController" type="Node"]
-script = ExtResource("2")
+script = ExtResource("1_eaeco")
 
 [node name="background" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3")
