@@ -1,15 +1,19 @@
 [remap]
 
-importer="ogg_vorbis"
-type="AudioStreamOGGVorbis"
-path="res://.import/glitch_001.ogg-31783e1d70d7a97fe38e88ec6123e70d.oggstr"
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b0bq5wirbjicj"
+path="res://.godot/imported/glitch_001.ogg-31783e1d70d7a97fe38e88ec6123e70d.oggvorbisstr"
 
 [deps]
 
 source_file="res://assets/Audio/glitch_001.ogg"
-dest_files=[ "res://.import/glitch_001.ogg-31783e1d70d7a97fe38e88ec6123e70d.oggstr" ]
+dest_files=["res://.godot/imported/glitch_001.ogg-31783e1d70d7a97fe38e88ec6123e70d.oggvorbisstr"]
 
 [params]
 
 loop=true
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

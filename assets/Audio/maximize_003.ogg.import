@@ -1,15 +1,19 @@
 [remap]
 
-importer="ogg_vorbis"
-type="AudioStreamOGGVorbis"
-path="res://.import/maximize_003.ogg-65ccd57ba763fb63e2b22a34fa3e8618.oggstr"
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bwl5a2i406fwu"
+path="res://.godot/imported/maximize_003.ogg-65ccd57ba763fb63e2b22a34fa3e8618.oggvorbisstr"
 
 [deps]
 
 source_file="res://assets/Audio/maximize_003.ogg"
-dest_files=[ "res://.import/maximize_003.ogg-65ccd57ba763fb63e2b22a34fa3e8618.oggstr" ]
+dest_files=["res://.godot/imported/maximize_003.ogg-65ccd57ba763fb63e2b22a34fa3e8618.oggvorbisstr"]
 
 [params]
 
 loop=true
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

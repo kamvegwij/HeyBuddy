@@ -1,20 +1,22 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
-onready var playerAnimation = $AnimationPlayer
-onready var animationTree = $AnimationTree
-onready var animationState = animationTree.get("parameters/playback")
+@onready var playerAnimation = $AnimationPlayer
+@onready var animationTree = $AnimationTree
+@onready var animationState = animationTree.get("parameters/playback")
 
 var speed = Vector2.ZERO
 var canWalk = true
 
 const ACCELERATION = 500
 const FRICTION = 500
-export (int) var MAX_SPEED = 145
+@export var MAX_SPEED = 145
 
 func _physics_process(delta):
 	if canWalk:
 		move(delta)
-		speed = move_and_slide(speed)
+		set_velocity(speed)
+		move_and_slide()
+		speed = velocity
 
 func move(delta):
 	var movement = Vector2.ZERO

@@ -1,15 +1,19 @@
 [remap]
 
-importer="ogg_vorbis"
-type="AudioStreamOGGVorbis"
-path="res://.import/minimize_002.ogg-42705946b5458826a6e9a59846354947.oggstr"
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c7br0no6sj8mo"
+path="res://.godot/imported/minimize_002.ogg-42705946b5458826a6e9a59846354947.oggvorbisstr"
 
 [deps]
 
 source_file="res://assets/Audio/minimize_002.ogg"
-dest_files=[ "res://.import/minimize_002.ogg-42705946b5458826a6e9a59846354947.oggstr" ]
+dest_files=["res://.godot/imported/minimize_002.ogg-42705946b5458826a6e9a59846354947.oggvorbisstr"]
 
 [params]
 
 loop=true
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,299 +1,284 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=30 format=3 uid="uid://bp8jmwwufjdhq"]
 
-[ext_resource path="res://assets/images/Day.png" type="Texture" id=1]
-[ext_resource path="res://additional scripts/Player.gd" type="Script" id=2]
-[ext_resource path="res://additional scripts/Camera2D.gd" type="Script" id=3]
-[ext_resource path="res://additional scripts/PickUpZone.gd" type="Script" id=4]
-[ext_resource path="res://scenes/popup.tscn" type="PackedScene" id=5]
-[ext_resource path="res://assets/images/buttonarrow.png" type="Texture" id=6]
+[ext_resource type="Script" path="res://additional scripts/Player.gd" id="2"]
+[ext_resource type="Script" path="res://additional scripts/Camera2D.gd" id="3"]
+[ext_resource type="Script" path="res://additional scripts/PickUpZone.gd" id="4"]
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id="2"]
 resource_name = "IdleDown"
 length = 0.1
-loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ 21 ]
+"values": [21]
 }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id="3"]
 resource_name = "IdleLeft"
 length = 0.1
-loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ 14 ]
+"values": [14]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id="4"]
 resource_name = "IdleRight"
 length = 0.1
-loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ 0 ]
+"values": [0]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id="5"]
 resource_name = "IdleUp"
 length = 0.1
-loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ 8 ]
+"values": [8]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id="6"]
 resource_name = "RunDown"
 length = 0.6
-loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ 22, 23, 24, 25, 26, 27 ]
+"values": [22, 23, 24, 25, 26, 27]
 }
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id="7"]
 resource_name = "RunLeft"
 length = 0.6
-loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ 15, 16, 17, 18, 19, 20 ]
+"values": [15, 16, 17, 18, 19, 20]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id="8"]
 length = 0.6
-loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ 1, 2, 3, 4, 5, 6 ]
+"values": [1, 2, 3, 4, 5, 6]
 }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id="9"]
 length = 0.6
-loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ 8, 9, 10, 11, 12, 13 ]
+"values": [8, 9, 10, 11, 12, 13]
 }
 
-[sub_resource type="CapsuleShape2D" id=1]
-radius = 4.0
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_eoa6d"]
+_data = {
+"IdleDown": SubResource("2"),
+"IdleLeft": SubResource("3"),
+"IdleRight": SubResource("4"),
+"IdleUp": SubResource("5"),
+"RunDown": SubResource("6"),
+"RunLeft": SubResource("7"),
+"RunRight": SubResource("8"),
+"RunUp": SubResource("9")
+}
+
+[sub_resource type="CapsuleShape2D" id="1"]
+radius = 2.79027
 height = 5.58054
 
-[sub_resource type="AnimationNodeAnimation" id=25]
-animation = "IdleLeft"
+[sub_resource type="AnimationNodeAnimation" id="25"]
+animation = &"IdleLeft"
 
-[sub_resource type="AnimationNodeAnimation" id=26]
-animation = "IdleDown"
+[sub_resource type="AnimationNodeAnimation" id="26"]
+animation = &"IdleDown"
 
-[sub_resource type="AnimationNodeAnimation" id=27]
-animation = "IdleRight"
+[sub_resource type="AnimationNodeAnimation" id="27"]
+animation = &"IdleRight"
 
-[sub_resource type="AnimationNodeAnimation" id=28]
-animation = "IdleUp"
+[sub_resource type="AnimationNodeAnimation" id="28"]
+animation = &"IdleUp"
 
-[sub_resource type="AnimationNodeBlendSpace2D" id=14]
-blend_point_0/node = SubResource( 25 )
-blend_point_0/pos = Vector2( -1, 0 )
-blend_point_1/node = SubResource( 26 )
-blend_point_1/pos = Vector2( 0, 1.1 )
-blend_point_2/node = SubResource( 27 )
-blend_point_2/pos = Vector2( 1, 0 )
-blend_point_3/node = SubResource( 28 )
-blend_point_3/pos = Vector2( 0, -1.1 )
-min_space = Vector2( -1.02, -1.1 )
-max_space = Vector2( 1, 1.1 )
+[sub_resource type="AnimationNodeBlendSpace2D" id="14"]
+blend_point_0/node = SubResource("25")
+blend_point_0/pos = Vector2(-1, 0)
+blend_point_1/node = SubResource("26")
+blend_point_1/pos = Vector2(0, 1.1)
+blend_point_2/node = SubResource("27")
+blend_point_2/pos = Vector2(1, 0)
+blend_point_3/node = SubResource("28")
+blend_point_3/pos = Vector2(0, -1.1)
+min_space = Vector2(-1.02, -1.1)
+max_space = Vector2(1, 1.1)
 blend_mode = 1
 
-[sub_resource type="AnimationNodeAnimation" id=29]
-animation = "RunLeft"
+[sub_resource type="AnimationNodeAnimation" id="29"]
+animation = &"RunLeft"
 
-[sub_resource type="AnimationNodeAnimation" id=30]
-animation = "RunDown"
+[sub_resource type="AnimationNodeAnimation" id="30"]
+animation = &"RunDown"
 
-[sub_resource type="AnimationNodeAnimation" id=31]
-animation = "RunRight"
+[sub_resource type="AnimationNodeAnimation" id="31"]
+animation = &"RunRight"
 
-[sub_resource type="AnimationNodeAnimation" id=32]
-animation = "RunUp"
+[sub_resource type="AnimationNodeAnimation" id="32"]
+animation = &"RunUp"
 
-[sub_resource type="AnimationNodeBlendSpace2D" id=19]
-blend_point_0/node = SubResource( 29 )
-blend_point_0/pos = Vector2( -1, 0 )
-blend_point_1/node = SubResource( 30 )
-blend_point_1/pos = Vector2( 0, 1.1 )
-blend_point_2/node = SubResource( 31 )
-blend_point_2/pos = Vector2( 1, 0 )
-blend_point_3/node = SubResource( 32 )
-blend_point_3/pos = Vector2( 0, -1.1 )
-min_space = Vector2( -1, -1.1 )
-max_space = Vector2( 1, 1.1 )
+[sub_resource type="AnimationNodeBlendSpace2D" id="19"]
+blend_point_0/node = SubResource("29")
+blend_point_0/pos = Vector2(-1, 0)
+blend_point_1/node = SubResource("30")
+blend_point_1/pos = Vector2(0, 1.1)
+blend_point_2/node = SubResource("31")
+blend_point_2/pos = Vector2(1, 0)
+blend_point_3/node = SubResource("32")
+blend_point_3/pos = Vector2(0, -1.1)
+min_space = Vector2(-1, -1.1)
+max_space = Vector2(1, 1.1)
 blend_mode = 1
 
-[sub_resource type="AnimationNodeStateMachineTransition" id=21]
+[sub_resource type="AnimationNodeStateMachineTransition" id="21"]
 
-[sub_resource type="AnimationNodeStateMachineTransition" id=20]
+[sub_resource type="AnimationNodeStateMachineTransition" id="20"]
 
-[sub_resource type="AnimationNodeStateMachine" id=33]
-states/Idle/node = SubResource( 14 )
-states/Idle/position = Vector2( 485, 161 )
-states/Run/node = SubResource( 19 )
-states/Run/position = Vector2( 676, 161 )
-transitions = [ "Run", "Idle", SubResource( 21 ), "Idle", "Run", SubResource( 20 ) ]
-start_node = "Idle"
-graph_offset = Vector2( -2, 37 )
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_nvsl7"]
+advance_mode = 2
 
-[sub_resource type="AnimationNodeStateMachinePlayback" id=34]
+[sub_resource type="AnimationNodeStateMachine" id="33"]
+states/Idle/node = SubResource("14")
+states/Idle/position = Vector2(485, 161)
+states/Run/node = SubResource("19")
+states/Run/position = Vector2(676, 161)
+transitions = ["Run", "Idle", SubResource("21"), "Idle", "Run", SubResource("20"), "Start", "Idle", SubResource("AnimationNodeStateMachineTransition_nvsl7")]
+graph_offset = Vector2(-2, 37)
 
-[sub_resource type="RectangleShape2D" id=24]
-extents = Vector2( 12.0005, 15.0478 )
+[sub_resource type="AnimationNodeStateMachinePlayback" id="34"]
 
-[node name="Player" type="KinematicBody2D"]
-scale = Vector2( 2.5, 2.5 )
+[sub_resource type="RectangleShape2D" id="24"]
+size = Vector2(12.0005, 15.0478)
+
+[node name="Player" type="CharacterBody2D"]
+scale = Vector2(2.5, 2.5)
 collision_mask = 6
-script = ExtResource( 2 )
+script = ExtResource("2")
 
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( -1.31102, -7.12712 )
-texture = ExtResource( 1 )
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1.31102, -7.12712)
 hframes = 28
 frame = 21
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/IdleDown = SubResource( 2 )
-anims/IdleLeft = SubResource( 3 )
-anims/IdleRight = SubResource( 4 )
-anims/IdleUp = SubResource( 5 )
-anims/RunDown = SubResource( 6 )
-anims/RunLeft = SubResource( 7 )
-anims/RunRight = SubResource( 8 )
-anims/RunUp = SubResource( 9 )
+libraries = {
+"": SubResource("AnimationLibrary_eoa6d")
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = -1.5708
-shape = SubResource( 1 )
+shape = SubResource("1")
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
-tree_root = SubResource( 33 )
+tree_root = SubResource("33")
 anim_player = NodePath("../AnimationPlayer")
 active = true
-parameters/playback = SubResource( 34 )
-parameters/Idle/blend_position = Vector2( -0.00206292, 0.142241 )
-parameters/Run/blend_position = Vector2( 0, 0 )
+parameters/playback = SubResource("34")
+parameters/Idle/blend_position = Vector2(-0.00206292, 0.142241)
+parameters/Run/blend_position = Vector2(0, 0)
 
 [node name="PickUpZone" type="Area2D" parent="."]
-scale = Vector2( 1.47802, 0.92071 )
+scale = Vector2(1.47802, 0.92071)
 collision_layer = 0
 collision_mask = 4
-script = ExtResource( 4 )
+script = ExtResource("4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PickUpZone"]
-position = Vector2( -0.00666934, -9.71571 )
-shape = SubResource( 24 )
+position = Vector2(-0.00666934, -9.71571)
+shape = SubResource("24")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( 0.8, -4.8 )
-current = true
-drag_margin_left = 0.0
-drag_margin_top = 0.0
-drag_margin_right = 0.0
-drag_margin_bottom = 0.0
-script = ExtResource( 3 )
-
-[node name="popup" parent="." instance=ExtResource( 5 )]
-margin_left = -41.6
-margin_top = -134.4
-margin_right = 212.4
-margin_bottom = -81.4
-rect_scale = Vector2( 0.511989, 0.533566 )
+position = Vector2(0.8, -4.8)
+drag_left_margin = 0.0
+drag_top_margin = 0.0
+drag_right_margin = 0.0
+drag_bottom_margin = 0.0
+script = ExtResource("3")
 
 [node name="forward" type="TouchScreenButton" parent="."]
-position = Vector2( -62.8008, 116 )
+position = Vector2(-62.8008, 116)
 rotation = 1.57079
-scale = Vector2( 0.00345558, 0.00615405 )
-normal = ExtResource( 6 )
+scale = Vector2(0.00345558, 0.00615405)
 
 [node name="left" type="TouchScreenButton" parent="."]
-position = Vector2( -110, 140 )
-scale = Vector2( 0.00345558, 0.00615405 )
-normal = ExtResource( 6 )
+position = Vector2(-110, 140)
+scale = Vector2(0.00345558, 0.00615405)
 
 [node name="right" type="TouchScreenButton" parent="."]
-position = Vector2( -33.6001, 159.2 )
+position = Vector2(-33.6001, 159.2)
 rotation = 3.14159
-scale = Vector2( 0.00345558, 0.00615405 )
-normal = ExtResource( 6 )
+scale = Vector2(0.00345558, 0.00615405)
 
 [node name="backwards" type="TouchScreenButton" parent="."]
-position = Vector2( -82.8008, 180.8 )
+position = Vector2(-82.8008, 180.8)
 rotation = -1.57079
-scale = Vector2( 0.00345558, 0.00615405 )
-normal = ExtResource( 6 )
+scale = Vector2(0.00345558, 0.00615405)
 
 [connection signal="body_entered" from="PickUpZone" to="PickUpZone" method="_on_PickUpZone_body_entered"]
 [connection signal="body_exited" from="PickUpZone" to="PickUpZone" method="_on_PickUpZone_body_exited"]

@@ -8,12 +8,12 @@ func _ready():
 	
 func _on_play_pressed():
 	MusicController.play_sound()
-	get_tree().change_scene("res://scenes/main.tscn")
+	get_tree().change_scene_to_file("res://scenes/main.tscn")
 
 
 func _on_help_pressed():
 	MusicController.help_sound()
-	get_tree().change_scene("res://scenes/help.tscn")
+	get_tree().change_scene_to_file("res://scenes/help.tscn")
 
 
 func _on_exit_pressed():

@@ -1,28 +1,28 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=5 format=3 uid="uid://btra23ij6pnpl"]
 
-[ext_resource path="res://assets/Audio/confirmation_001.ogg" type="AudioStream" id=1]
-[ext_resource path="res://additional scripts/MusicController.gd" type="Script" id=2]
-[ext_resource path="res://assets/Audio/menu background.wav" type="AudioStream" id=3]
-[ext_resource path="res://assets/Audio/select_001.ogg" type="AudioStream" id=4]
+[ext_resource type="AudioStream" uid="uid://dtrf77fkymwjt" path="res://assets/Audio/confirmation_001.ogg" id="1"]
+[ext_resource type="Script" path="res://additional scripts/MusicController.gd" id="2"]
+[ext_resource type="AudioStream" uid="uid://64l3m56we45j" path="res://assets/Audio/menu background.wav" id="3"]
+[ext_resource type="AudioStream" uid="uid://lducujixtw72" path="res://assets/Audio/select_001.ogg" id="4"]
 
 [node name="MusicController" type="Node"]
-script = ExtResource( 2 )
+script = ExtResource("2")
 
 [node name="background" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 3 )
+stream = ExtResource("3")
 
 [node name="collect_sound" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 1 )
+stream = ExtResource("1")
 volume_db = -1.748
 
 [node name="play_sound" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 4 )
+stream = ExtResource("4")
 volume_db = -17.479
 
 [node name="help_sound" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 4 )
+stream = ExtResource("4")
 volume_db = -17.479
 
 [node name="exit_sound" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 4 )
+stream = ExtResource("4")
 volume_db = -17.479

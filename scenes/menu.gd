@@ -5,12 +5,12 @@ func _ready():
 	
 func _on_play_pressed():
 	$play_click.play()
-	get_tree().change_scene("res://scenes/main.tscn")
+	get_tree().change_scene_to_file("res://scenes/main.tscn")
 
 
 func _on_help_pressed():
 	$help_click.play()
-	get_tree().change_scene("res://scenes/help.tscn")
+	get_tree().change_scene_to_file("res://scenes/help.tscn")
 
 
 func _on_exit_pressed():

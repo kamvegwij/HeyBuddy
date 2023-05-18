@@ -1,28 +1,35 @@
-[gd_resource type="Theme" load_steps=7 format=2]
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://dg8yuimsg0fib"]
 
-[ext_resource path="res://assets/fonts/DiloWorld-mLJLv.ttf" type="DynamicFontData" id=1]
+[ext_resource type="FontFile" uid="uid://c1jo8yynjvg36" path="res://assets/fonts/DiloWorld-mLJLv.ttf" id="1"]
 
-[sub_resource type="DynamicFont" id=7]
-size = 13
-extra_spacing_char = 1
-font_data = ExtResource( 1 )
+[sub_resource type="FontFile" id="7"]
+fallbacks = Array[Font]([ExtResource("1")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
-[sub_resource type="StyleBoxFlat" id=5]
+[sub_resource type="StyleBoxFlat" id="5"]
 
-[sub_resource type="StyleBoxFlat" id=1]
-bg_color = Color( 0.623529, 0.635294, 0.227451, 0.580392 )
+[sub_resource type="StyleBoxFlat" id="1"]
+bg_color = Color(0.623529, 0.635294, 0.227451, 0.580392)
 
-[sub_resource type="StyleBoxFlat" id=2]
-bg_color = Color( 0.623529, 0.635294, 0.227451, 1 )
+[sub_resource type="StyleBoxFlat" id="2"]
+bg_color = Color(0.623529, 0.635294, 0.227451, 1)
 
-[sub_resource type="StyleBoxFlat" id=6]
-bg_color = Color( 0.623529, 0.635294, 0.227451, 0.380392 )
+[sub_resource type="StyleBoxFlat" id="6"]
+bg_color = Color(0.623529, 0.635294, 0.227451, 0.380392)
 
 [resource]
-Button/colors/font_color = Color( 0.988235, 0.988235, 0.988235, 1 )
-Button/colors/font_color_pressed = Color( 0.92549, 0.992157, 0.160784, 1 )
-Button/fonts/font = SubResource( 7 )
-Button/styles/disabled = SubResource( 5 )
-Button/styles/hover = SubResource( 1 )
-Button/styles/normal = SubResource( 2 )
-Button/styles/pressed = SubResource( 6 )
+Button/colors/font_color = Color(0.988235, 0.988235, 0.988235, 1)
+Button/colors/font_color_pressed = Color(0.92549, 0.992157, 0.160784, 1)
+Button/fonts/font = SubResource("7")
+Button/styles/disabled = SubResource("5")
+Button/styles/hover = SubResource("1")
+Button/styles/normal = SubResource("2")
+Button/styles/pressed = SubResource("6")

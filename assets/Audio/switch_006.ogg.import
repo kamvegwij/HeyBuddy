@@ -1,15 +1,19 @@
 [remap]
 
-importer="ogg_vorbis"
-type="AudioStreamOGGVorbis"
-path="res://.import/switch_006.ogg-0095e219186dd113e34c78fb4d5af29b.oggstr"
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://koabmx3u0bjb"
+path="res://.godot/imported/switch_006.ogg-0095e219186dd113e34c78fb4d5af29b.oggvorbisstr"
 
 [deps]
 
 source_file="res://assets/Audio/switch_006.ogg"
-dest_files=[ "res://.import/switch_006.ogg-0095e219186dd113e34c78fb4d5af29b.oggstr" ]
+dest_files=["res://.godot/imported/switch_006.ogg-0095e219186dd113e34c78fb4d5af29b.oggvorbisstr"]
 
 [params]
 
 loop=true
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
